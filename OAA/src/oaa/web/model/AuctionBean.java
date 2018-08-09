@@ -144,7 +144,7 @@ public class AuctionBean extends ActionForm {
 		try {
 
 			Auction auction = null;
-			String sql = "SELECT m.auction_id,m.product_id,m.user_id,m.start_date,m.end_date,p.min_bid_price,p.product_name,p.photo,p.description FROM auction_master m join product p on m.product_id=p.product_id   where  m.status=? or to_date(end_date,'%Y-%m') = to_date(current_date, '%Y-%m') and to_date(end_date,'%Y-%m-%d') < to_date(current_date), '%Y-%m-%d';";
+			String sql = "SELECT m.auction_id,m.product_id,m.user_id,m.start_date,m.end_date,p.min_bid_price,p.product_name,p.photo,p.description FROM auction_master m join product p on m.product_id=p.product_id   where  m.status=? or to_date(end_date,'%Y-%m') = to_date(current_date, '%Y-%m') and to_date(end_date,'%Y-%m-%d') < to_date(current_date, '%Y-%m-%d')";
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ps.setString(1, "D");
 
