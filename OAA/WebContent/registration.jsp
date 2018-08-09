@@ -3,6 +3,7 @@
 
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html"%>
 
+
 <%@ include file="header.jsp"%>
 
 <div id="all">
