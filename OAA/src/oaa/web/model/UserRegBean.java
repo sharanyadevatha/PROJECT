@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import javax.naming.Context;
 import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
+import javax.sound.midi.Sequence;
 
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
@@ -157,6 +158,7 @@ public class UserRegBean extends ActionForm {
 		Connection connection = new ConnectionManager().connection();
 		PreparedStatement ps = null;
 		ResultSet rs = null;
+		
 
 		try {
 

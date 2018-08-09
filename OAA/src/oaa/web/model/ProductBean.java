@@ -92,7 +92,7 @@ public class ProductBean extends ActionForm {
 			fileData = image.getFileData();
 			fileBA = new ByteArrayInputStream(fileData);
 
-			ps = connection.prepareStatement("insert into product values(null,?,?,?,?,?,'E',?,now())");
+			ps = connection.prepareStatement("insert into product values(product_id.NEXTVAL,?,?,?,?,?,'E',?,now())");
 
 			ps.setString(1, getProductName());
 
