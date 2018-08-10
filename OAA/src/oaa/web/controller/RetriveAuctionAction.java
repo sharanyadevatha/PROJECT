@@ -19,9 +19,7 @@ public class RetriveAuctionAction extends Action implements Serializable {
 
 	private static final String SUCCESS = "success";
 
-	public ActionForward execute(ActionMapping mapping, ActionForm form,
-
-			HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ActionForward execute(ActionMapping mapping, ActionForm form,HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		if (form instanceof AuctionBean) {
 
